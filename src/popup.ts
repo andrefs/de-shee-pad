@@ -30,7 +30,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
         type: 'DO_FETCH',
         payload: {
           url: `http://localhost:3000/api/import/url?url=${encodeURIComponent(
-            tab.url
+            tab.url as string
           )}`,
         },
       },
