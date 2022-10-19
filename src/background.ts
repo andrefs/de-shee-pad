@@ -1,3 +1,19 @@
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log('message', request.payload.url);
+  if (request.type === 'DO_FETCH') {
+    (async () => {
+      const resp = await fetch(request.payload.url);
+      const message = await resp.text();
+
+      // Send a response message
+      sendResponse({
+        message,
+      });
+    })();
+    return true;
+  }
+});
+
 let activeTabId: number | undefined;
 
 let lastUrl: string | undefined;
