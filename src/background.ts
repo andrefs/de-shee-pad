@@ -21,10 +21,10 @@ const setIcons = (isGoogleSheet: boolean) => {
   if (isGoogleSheet) {
     chrome.action.setIcon({
       path: {
-        16: './icons/obj-16x16.png',
-        32: './icons/obj-32x32.png',
-        48: './icons/obj-48x48.png',
-        128: './icons/obj-128x128.png',
+        16: './icons/icon_16_hl.png',
+        32: './icons/icon_32_hl.png',
+        48: './icons/icon_48_hl.png',
+        128: './icons/icon_128_hl.png',
       },
     });
   } else {
