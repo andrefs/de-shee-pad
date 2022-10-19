@@ -1,5 +1,7 @@
 'use strict';
 
+import './popup.css';
+
 let path;
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
   console.log('XXXXXXXXx', { tabs });
