@@ -65,7 +65,6 @@ const setPopupContent = (email: string, link: string) => {
   const linkEl = document.getElementById(
     'de-shee-pad-link'
   ) as HTMLAnchorElement;
-  linkEl!.innerHTML = link;
   linkEl!.href = link;
 
   const emailEl = document.getElementById(
