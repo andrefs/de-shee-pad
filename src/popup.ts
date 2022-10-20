@@ -17,6 +17,21 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     setDefaultPopup();
     return;
   }
+
+  if (/wikipedia/.test(url.host)) {
+    setGSheetsPopup('', 'http://localhost:3000/n/ZcnddxlsTmYnza3OQFH-N');
+
+    return;
+  }
+  if (/dropbox/.test(url.host)) {
+    setGSheetsPopup(
+      '',
+      'http://localhost:3000/n/Image%3AnIZkV4fdzgfW0hsZnSoq3'
+    );
+
+    return;
+  }
+
   const matches = url.pathname.match(/^\/spreadsheets\/d\/(.+?)\//);
   if (!matches) {
     setDefaultPopup();
