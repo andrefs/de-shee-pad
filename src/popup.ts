@@ -1,5 +1,4 @@
 'use strict';
-
 import './popup.css';
 
 let path;
