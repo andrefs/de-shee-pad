@@ -19,14 +19,14 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
   }
 
   if (/wikipedia/.test(url.host)) {
-    setGSheetsPopup('', 'http://localhost:3000/n/ZcnddxlsTmYnza3OQFH-N');
+    setGSheetsPopup('', 'http://localhost:3000/n/aFz2wr-t1Q14oeqz3smIa');
 
     return;
   }
-  if (/dropbox/.test(url.host)) {
+  if (/discordapp/.test(url.host)) {
     setGSheetsPopup(
       '',
-      'http://localhost:3000/n/Image%3AnIZkV4fdzgfW0hsZnSoq3'
+      'http://localhost:3000/n/icH5t27FGG-4_3cirkcAc'
     );
 
     return;
